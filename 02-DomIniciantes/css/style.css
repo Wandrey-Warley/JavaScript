@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+}
+.titulo {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  background: darkmagenta;
+  height: 80px;
+  align-items: center;
+}
+.azul{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}

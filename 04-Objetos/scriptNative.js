@@ -1,11 +1,12 @@
 window.onload = () => {
-    console.log('Script Native Start')
+    console.log('Script Native Start');
+    console.log("Chamando as seguintes funções:");
     limpaPrecos();
 }
 
 
 
-console.log(typeof Array.from); // Verifica se o objeto existe
+console.log(`É uma: ${typeof Array.from}`); // Verifica se o objeto existe
  
 /*
 //EXERCICIOS ------------------------------------------------
@@ -95,7 +96,7 @@ NodeList
       if(item === 'taxa') nTaxas ++;
     });
     return nTaxas;
-  }*/
+  }
   
 //Exercicios -------------------------------------------------------------
   // Retorne um número aleatório
@@ -105,30 +106,25 @@ NodeList
 
   // Retorne o maior número da lista abaixo
   const numeros = '4, 5, 20, 8, 9';
-  console.log(`Maior numero: ${Math.max(4, 5, 20, 8, 9)}`);
-  /*Tentativas de usar um array
-  const arrayNumeros = numeros.split(", ");
-  console.log(arrayNumeros.forEach(numero => {return numero;}));
-  const maior = Math.max(arrayNumeros.forEach(numero => { return numero }));
-  console.log(`Maior numero: ${maior}`);*/
-  
+  const ArrayNumeros = numeros.split(", ");
+  console.log(`Maior numero: ${Math.max(...ArrayNumeros)}`);
 
   // Crie uma função para limpar os preços
   // e retornar os números com centavos arredondados
   // depois retorne a soma total
   let listaPrecos = ['R$ 59,99', ' R$ 100,222', 'R$ 230  ', 'r$  200'];
   
-
   function limpaPrecos(){
 
     let somaPrecos = 0;
     
-    listaPrecos.forEach((preco) => {
+    listaPrecos.forEach((preco, index) => {
       preco = preco.slice(3).replace(",", ".");
-      preco = Number.parseFloat(preco);
-      preco = preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
-      console.log(preco);
+      listaPrecos[index] = Number.parseFloat(preco).toLocaleString(
+      'pt-BR', {style: 'currency', currency: 'BRL'});
+      somaPrecos += +preco;
     });
-    console.log(listaPrecos)
-  }
+    console.log(listaPrecos);
+    console.log(`Soma = ${somaPrecos.toFixed(2)}`);
+  }*/
     

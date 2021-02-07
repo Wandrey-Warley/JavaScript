@@ -8,7 +8,7 @@ window.onload = () => {
 
 console.log(`É uma: ${typeof Array.from}`); // Verifica se o objeto existe
  
-/*
+
 //EXERCICIOS ------------------------------------------------
 // Liste 5 objetos nativos
 Object
@@ -126,5 +126,8 @@ NodeList
     });
     console.log(listaPrecos);
     console.log(`Soma = ${somaPrecos.toFixed(2)}`);
-  }*/
+  }
+
+
+  
     

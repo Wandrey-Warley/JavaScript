@@ -8,12 +8,9 @@ function CarroParcelado(marca, precoInicial) {
   this.marca = marca;
 }
 
-
 fiesta =  new CarroParcelado('Ford' , 10000);
 
-
 console.log(fiesta.marca);
-
 
 // EXERCICIO ------------------------------------------------------------------------
 

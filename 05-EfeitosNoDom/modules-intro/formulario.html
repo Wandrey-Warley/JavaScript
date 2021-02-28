@@ -44,16 +44,16 @@
             console.log(event.target.name);
             dados[event.target.name] = event.target.value;
             
-            // console.log(event.target.value);
-            // document.body.style.backgroundColor = event.target.value;
-            // const target = event.target;
-            // if(target.checkValidity() && target.classList.contains('invalido')) { 
-            //     target.classList.remove('invalido');
-            //     target.nextElementSibling.innerText = '';
-            // } else if(!target.checkValidity()) {
-            //     target.classList.add('invalido');
-            //     target.nextElementSibling.innerText = target.validationMessage;
-            // }
+            console.log(event.target.value);
+            document.body.style.backgroundColor = event.target.value;
+            const target = event.target;
+            if(target.checkValidity() && target.classList.contains('invalido')) { 
+                target.classList.remove('invalido');
+                target.nextElementSibling.innerText = '';
+            } else if(!target.checkValidity()) {
+                target.classList.add('invalido');
+                target.nextElementSibling.innerText = target.validationMessage;
+            }
         };
 
         console.log(contato.elements.nome.value);

@@ -19,7 +19,7 @@
   <div class="grid-container"> 
     <nav class="menu " data-menu="suave" id="menu">
       <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
-        <ul data-menu="list" >
+        <ul data-menu="list" id="menu">
             <li><a href="#animais">Animais</a></li>
             <li data-dropdown>
               <a href="sobre.html">Sobre</a>
@@ -29,9 +29,6 @@
                 <li><a href="empresa.html">Socios</a></li>
                 <li><a href="empresa.html">Investidores</a></li>
                 <li><a href="cronometro.html">Cronometro</a></li>
-                <li><a href="formulario.html">Fórmulario</a></li>
-                <li><a href="buttonCreator.html">Button Creator</a></li>
-                <li><a href="fetch.html">Fetch</a></li>
               </ul>
             </li>
             <li><a href="#faq">Faq</a></li>
@@ -39,16 +36,16 @@
             <li><a href="login.html" data-modal="abrir">Login →</a></li>
         </ul>
     </nav>
-    
+    </div>
     <section class="grid-section animais ativo" data-anime="scroll" id="animais">
         <h1 class="titulo">Animais Fantasticos</h1>
         <ul class="animais-lista" data-tab='menu'>
             <li><img src="img/imagem1.jpg" alt="Raposa"></li>
-            <li><img src="img/imagem2.jpg" alt="Esquilo"></li>
+            <li><img src="img/imagem2.jpg"></li>
             <li><img src="img/imagem3.jpg" alt="Urso"></li>
-            <li><img src="img/imagem4.jpg" alt="Lobo"></li>
-            <li><img src="img/imagem5.jpg" alt="Macaco"></li>
-            <li><img src="img/imagem6.jpg" alt="Leão"></li>
+            <li><img src="img/imagem4.jpg"></li>
+            <li><img src="img/imagem5.jpg" alt="Leão"></li>
+            <li><img src="img/imagem6.jpg"></li>
         </ul>
         <div class="animais-descricao" data-tab='content'>
             <section data-anime='show-right'>
@@ -119,40 +116,17 @@
             <dd>Também apresentam como particularidade suas pupilas ovais, semelhantes às pupilas verticais dos felídeos.</dd>
           </dl>
         </section>
-
-        <section class="grid-section numeros" data-anime="scroll">
-          <h1 class="titulo">Números</h1>
-          <div class="numeros-grid">
-            <div class="numero-animal">
-              <h3>Lobos</h3>
-              <span data-numero>4874</span>
-            </div>
-            <div class="numero-animal">
-              <h3>Raposas</h3>
-              <span data-numero>578</span>
-            </div>
-            <div class="numero-animal">
-              <h3>Esquilos</h3>
-              <span data-numero>10589</span>
-            </div>
-            <div class="numero-animal">
-              <h3>Ursos</h3>
-              <span data-numero>1862</span>
-            </div>
-          </div>
-        </section>
       
         <section class="grid-section contato" data-anime="scroll" id="contato">
           <h1 class="titulo">Contato</h1>
           <div class="mapa" data-tooltip aria-label="Endereço proximo ao estacionamento">
-            <img src="img/mapa.png" alt="Mapa do local">
+            <img src="img/mapa.png">
           </div>
           <ul class="dados">
             <li>wandrey@gmail.com</li>
             <li>+55 (62) 99595-5959</li>
             <li>Rua Vinte e Oito, nº 11</li>
             <li>Goiânia - GO</li>
-            <li data-semana="1,2,3,4,5" data-horario="8,18" >Segunda a sexta das 08 às 18</li>
           </ul>
         </section>
       

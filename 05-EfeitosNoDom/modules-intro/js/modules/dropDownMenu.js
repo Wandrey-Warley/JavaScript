@@ -11,7 +11,16 @@ export default function initDropDownMenu() {
   });
   
   function handleClick(event) {
-    event.preventDefault();
+    // console.log(event.target.innerText)
+    // console.log(event)
+    // event.preventDefault();
+    if( event.target.innerText == 'SOBRE'   ||
+        event.target.innerText == 'EMPRESA' ||  
+        event.target.innerText == 'EQUIPE'  ||
+        event.target.innerText == 'SOCIOS'  ||
+        event.target.innerText == 'INVESTIDORES'  ){
+           event.preventDefault();
+    }
     this.classList.add('active');
     outsideClick(this, ['touchstart', 'click'], () => {
       this.classList.remove('active');

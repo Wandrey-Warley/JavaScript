@@ -7,8 +7,9 @@ import initModal from './modules/modal.js';
 import initTooltip from './modules/tooltip.js';
 import initDropDownMenu from './modules/dropDownMenu.js';
 import initMenuMobile from './modules/menuMobile.js';
-import initAnimaNumeros from './modules/animaNumeros.js';
 import initFuncionamento from './modules/funcionamento.js';
+import initFetchAnimais from './modules/fetchAnimais.js'
+import initFetchBtc from './modules/fetchBtc.js'
 
 window.onload = () => {
     console.log("Start Script");
@@ -20,6 +21,7 @@ window.onload = () => {
     initTooltip();
     initDropDownMenu();
     initMenuMobile();
-    initAnimaNumeros();
     initFuncionamento();
+    initFetchAnimais();
+    initFetchBtc();
 }

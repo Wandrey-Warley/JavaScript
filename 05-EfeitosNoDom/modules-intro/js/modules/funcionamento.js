@@ -4,9 +4,6 @@ export default function initFuncionamento(){
     const diasSemana = funcionamento.dataset.semana.split(',').map(Number);
     const horarioSemana = funcionamento.dataset.horario.split(',').map(Number);
 
-    console.log(diasSemana);
-    console.log(horarioSemana);
-
     const dataAtual = new Date();
     const diaAtual = dataAtual.getDay();
     const horarioAtual = dataAtual.getHours();
@@ -17,8 +14,5 @@ export default function initFuncionamento(){
     if(diaAberto && horarioAberto){
         funcionamento.classList.add('aberto');
     }
-
-    console.log(diaAberto);
-    console.log(horarioAberto);
 }
 

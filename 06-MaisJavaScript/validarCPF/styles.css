@@ -1,0 +1,29 @@
+label{
+    display: block;
+    font-family: 'IBM Plex Mono', monospace, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+
+}
+input{
+    width: 100%;
+    padding: 5px;
+    border: 3px solid #222;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+input.erro{
+    border-color: red;
+}
+input.valido{
+    border-color: green;
+}
+.erroText{
+    display: none;
+}
+.erroText.ativo{
+    display: block;
+    font-family: 'IBM Plex Mono';
+    font-size: .875rem;
+    color: red;
+}

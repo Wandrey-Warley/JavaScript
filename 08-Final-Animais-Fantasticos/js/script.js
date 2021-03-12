@@ -1,8 +1,7 @@
 // Script principal que importa todos os modulos e os inicializa
-import initScroolSuave from './modules/scroll-suave.js';
-import initScrollAnimated from './modules/scroll-animation.js';
-import initAccordion from './modules/accordion.js';
-import initTabNav from './modules/tabNav.js';
+import ScrollSuave from './modules/scroll-suave.js';
+import Accordion from './modules/accordion.js';
+import TabNav from './modules/tabNav.js';
 import initModal from './modules/modal.js';
 import initTooltip from './modules/tooltip.js';
 import initDropDownMenu from './modules/dropDownMenu.js';
@@ -10,19 +9,22 @@ import initMenuMobile from './modules/menuMobile.js';
 import initFuncionamento from './modules/funcionamento.js';
 import initFetchAnimais from './modules/fetchAnimais.js';
 import initFetchBtc from './modules/fetchBtc.js';
+import initScrollAnimated from './modules/scroll-animation.js';
 
-window.onload = () => {
-  initScroolSuave();
-  initScrollAnimated();
-  initAccordion();
-  initTabNav();
-  initModal();
-  initTooltip();
-  initDropDownMenu();
-  initMenuMobile();
-  initFuncionamento();
-  initFetchAnimais();
-  initFetchBtc();
-};
+const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
+scrollSuave.init();
 
-console.log('Esta funcionando Obaaaaaaaaaaaaaa');
+const accordion = new Accordion('[data-anime="accordion"] dt');
+accordion.init();
+
+const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+tabNav.init();
+
+initModal();
+initTooltip();
+initDropDownMenu();
+initMenuMobile();
+initFuncionamento();
+initFetchAnimais();
+initFetchBtc();
+initScrollAnimated();

@@ -6,5 +6,6 @@ export default function debounce(callback, delay) {
       callback(...args);
       timer = null;
     }, delay);
+    
   };
 }
